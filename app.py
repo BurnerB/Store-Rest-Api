@@ -1,3 +1,7 @@
+# Database URL added as environment variable by heroku,
+# import os to give access to operating sysytems environment variables
+import os
+
 from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
@@ -9,7 +13,7 @@ from Resources.storeEndpoints import Store,StoreList
 
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL","sqlite:///data.db")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False #Turn ff flask sqalchemy modification tracker
 api = Api(app)
 app.secret_key = "BABA"
