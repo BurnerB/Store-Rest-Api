@@ -14,9 +14,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False #Turn ff flask sqalchemy mo
 api = Api(app)
 app.secret_key = "BABA"
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
+
 
 jwt = JWT(app,authenticate,identity) # /auth
 
