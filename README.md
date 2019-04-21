@@ -1,5 +1,7 @@
 ### STORE-APP
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8ff36e0ba8d14b60bdf33a8a5d99f733)](https://app.codacy.com/app/BurnerB/Store-Rest-Api?utm_source=github.com&utm_medium=referral&utm_content=BurnerB/Store-Rest-Api&utm_campaign=Badge_Grade_Dashboard)
+
 ### Endpoints covered
 | Method        | Endpoint                 | Description|
 | ------------- | --------------------------|------------|
